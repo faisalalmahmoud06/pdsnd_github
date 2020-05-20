@@ -14,7 +14,7 @@ def get_filters():
         (str) month - name of the month to filter by, or "all" to apply no month filter
         (str) day - name of the day of week to filter by, or "all" to apply no day filter
     """
-   
+
     print('\nHello! Let\'s explore some US bikeshare data!\n')
     # TO DO: get user input for city (chicago, new york city, washington). HINT: Use a while loop to handle invalid inputs
     while True:
@@ -173,7 +173,7 @@ def user_stats(df, city):
     # TO DO: Display earliest, most recent, and most common year of birth
     if city not in('Chicago', 'New York City'):
         print("\nSorry, birth year statistics for Washington are not available.")
-    else:
+    else: #we use this else because there is a birth statistcs
         print("\nAnd lastly, some information on bikeshare users' birth years...")
         print("Earliest birth year among bikeshare users: " + str(int(df['Birth Year'].min())))
         print("Most recent birth year among bikeshare users: " + str(int(df['Birth Year'].max())))
@@ -200,7 +200,7 @@ def main():
                 print(df.head())
             else:
                 break
-            
+
         restart = input('\nWould you like to restart? Enter yes or no.\n')
         if restart.lower() != 'yes':
             break

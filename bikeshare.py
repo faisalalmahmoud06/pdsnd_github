@@ -175,6 +175,7 @@ def user_stats(df, city):
         print("\nSorry, birth year statistics for Washington are not available.")
     else: #we use this else because there is a birth statistcs
         print("\nAnd lastly, some information on bikeshare users' birth years...")
+        #min will take the minimum value 
         print("Earliest birth year among bikeshare users: " + str(int(df['Birth Year'].min())))
         print("Most recent birth year among bikeshare users: " + str(int(df['Birth Year'].max())))
         print("Most common birth year among bikeshare users: " + str(int(df['Birth Year'].mode()[0])))

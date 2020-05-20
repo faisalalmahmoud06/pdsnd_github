@@ -11,4 +11,4 @@ this Project will give us a statistical view for the bike users in the states.
 files used are readme and bikeshare.py
 
 ### Credits
-to alrajhi and to the udacity instructor.
+to ALRAJHI and to the UDACITY instructor.
